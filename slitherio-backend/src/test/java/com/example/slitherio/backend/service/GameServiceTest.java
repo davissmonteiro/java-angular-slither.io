@@ -51,7 +51,7 @@ public class GameServiceTest {
         List<Coordinate> initialBody = List.of(new Coordinate(10, 10), new Coordinate(9, 10));
         Snake initialSnake = new Snake(playerId, initialBody, 0.0);
         GameState initialState = new GameState(Map.of(playerId, initialSnake), Map.of()); 
-        //gameService.forceState(initialState);
+        this.forceState(initialState);
         
         GameState nextState = gameService.gameTick();
 
