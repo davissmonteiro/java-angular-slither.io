@@ -13,10 +13,10 @@ public class SnakeTest {
         
         Snake snake = new Snake(player.id(), initialBody, direction);
 
-        assertEquals(player.id(), snake.playerId(), "The ID of snake's player should be 'p1'");
-        assertEquals(initialBody, snake.body(), "The initial body must match");
+        assertEquals(player.id(), snake.getPlayerId(), "The ID of snake's player should be 'p1'");
+        assertEquals(initialBody, snake.getBody(), "The initial body must match");
         assertEquals(initialBody.get(0), snake.getHead(), "The head must be the first of segment");
-        assertEquals(direction, snake.direction(), "The initial direction must be 0.0");
+        assertEquals(direction, snake.getDirection(), "The initial direction must be 0.0");
         
     }
 }

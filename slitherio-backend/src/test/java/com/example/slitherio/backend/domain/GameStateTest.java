@@ -15,7 +15,7 @@ public class GameStateTest {
         
         Snake snake1 = new Snake("p1", List.of(new Coordinate(1,1)),0);
         Food food1 = new Food(new Coordinate(5, 5), 1);
-        Map<String, Snake> snakes = Map.of(snake1.playerId(), snake1);
+        Map<String, Snake> snakes = Map.of(snake1.getPlayerId(), snake1);
         Map<UUID, Food> foods = Map.of(food1.id(), food1);
 
         GameState gameState = new GameState(snakes, foods);
